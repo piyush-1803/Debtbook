@@ -1,21 +1,82 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Debtbook 📱💰
 
-# Run and deploy your AI Studio app
+**Debtbook** is an intelligent Android application designed to help you track personal debts and manage repayments efficiently. By leveraging the power of the Google Gemini API, the app provides personalized insights into your financial habits and helps you stay on top of your financial obligations.
 
-This contains everything you need to run your app locally.
+## Features ✨
 
-View your app in AI Studio: https://ai.studio/apps/5bd51eb5-4712-4324-9936-d5b54b6e55d4
+* **Debt Tracking:** Easily log, monitor, and manage your debts and repayment progress.
+* **AI-Powered Insights:** Get personalized analysis and summaries of your overall financial standing.
+* **Modern Architecture:** Built with Kotlin and adheres to modern Android development practices.
 
-## Run Locally
+---
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+## Prerequisites 🛠️
 
+Before you begin, ensure you have met the following requirements:
+* **[Android Studio](https://android.com):** Download and install the latest stable version.
+* **Gemini API Key:** Obtain your free key from [Google AI Studio](https://aistudio.google.com/).
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+---
+
+## Getting Started 🚀
+
+Follow these steps to get your local development environment up and running:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/piyush-1803/Debtbook.git
+```
+
+### 2. Open in Android Studio
+1. Launch Android Studio and select **Open**.
+2. Navigate to your cloned project directory.
+3. Allow Gradle to sync and import all dependencies.
+
+### 3. Configure API Key
+In the root directory of your project, create a new file named `.env`. Add your Gemini API Key to it:
+```properties
+GEMINI_API_KEY=your_api_key_here
+```
+
+### 4. Build Configuration
+Open `app/build.gradle.kts` and comment out or remove the following line to ensure a smooth local build:
+```kotlin
+signingConfig = signingConfigs.getByName("debugConfig")
+```
+
+### 5. Run the App
+1. Connect your physical Android device or start an emulator.
+2. Click the **Run** button in Android Studio.
+
+---
+
+## Troubleshooting 🔧
+
+Having issues building or running the app? Try these quick fixes:
+
+* **API Key Error:** Ensure your `.env` file is in the exact root folder of the project, not inside the `app/` module folder.
+* **Gradle Sync Fails:** Check your internet connection and make sure your Android Studio SDK platforms are fully updated.
+* **Build Fails due to Missing Signature:** Double-check that `signingConfig` was successfully commented out in `app/build.gradle.kts`.
+
+---
+
+## Upcoming Features 🔮
+
+We are continuously working to improve Debtbook. Here is a look at what's coming next:
+* **Payment Reminders:** Push notifications for upcoming due dates.
+* **Budget Forecasting:** AI-driven projections on when you will be debt-free.
+* **Dark Mode:** A sleek, eye-friendly dark theme.
+
+---
+
+## Built With 🛠️
+
+* **[Kotlin](https://kotlinlang.org)** - Programming Language
+* **[Android SDK](https://android.com)** - Framework
+* **[Google Gemini API](https://google.dev)** - AI Integration
+
+---
+
+## License 📄
+
+This project is open-source. Feel free to explore and contribute!
