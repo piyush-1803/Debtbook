@@ -1,0 +1,6 @@
+{
+  "name": "DebtBook",
+  "description": "Zenith Debt Management - Real-time tracking of personal receivables, payables, and entity balances with intuitive Indian Rupee transaction dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
